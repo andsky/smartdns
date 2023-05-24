@@ -1,9 +1,9 @@
 # docker-smartdns
 **使用**
 ```
-docker pull ghostry/smartdns
+docker pull andsky/smartdns
 docker container stop gsmartdns ; docker container rm gsmartdns
-docker run -d -p 53:53/udp --restart=always --name gsmartdns -v ~/.gsmartdns:/smartdns ghostry/smartdns
+docker run -d -p 53:53/udp --restart=always --name gsmartdns -v ~/.gsmartdns:/smartdns andsky/smartdns
 docker restart gsmartdns
 ```
 
