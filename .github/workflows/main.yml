@@ -1,9 +1,9 @@
 name: Publish Docker image
 
 on:
-  push:
-    branches:
-      - master
+  #push:
+  #  branches:
+  #    - master
   release:
     types: [published]
   workflow_dispatch:
@@ -33,4 +33,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: ${{ env.IMAGE_NAME }}
+          tags: ${{ env.IMAGE_NAME }}, ${{ env.IMAGE_NAME }}-latest
